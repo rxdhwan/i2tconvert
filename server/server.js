@@ -3,8 +3,8 @@ const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
-const uploadImageRouter = require('./routes/uploadImage');
-const retrieveImageRouter = require('./routes/retrieveImage');
+const uploadImageRouter = require('./routes/uploadimage');
+const retrieveImageRouter = require('./routes/retrieveimage');
 
 const app = express();
 const upload = multer({ dest: 'uploads/' });
