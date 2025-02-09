@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Text Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image to Text Converter</h1>
+        <div class="image-to-text">
+            <input type="file" id="imageUpload" accept="image/*">
+            <button onclick="uploadImage()">Upload Image</button>
+            <textarea id="textOutput" placeholder="Unique identifier will appear here..." readonly></textarea>
+        </div>
+        <div class="text-to-image">
+            <textarea id="textInput" placeholder="Paste the unique identifier here to retrieve the image..."></textarea>
+            <button onclick="retrieveImage()">Retrieve Image</button>
+            <div id="imageOutput"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
